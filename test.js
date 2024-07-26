@@ -1,13 +1,22 @@
 
-class Car {
-    constructor(name, model) {
+class Human {
+    constructor(name) {
         this.name = name;
-        this.brand = model;
+        this.legs = true;
+        this.arms = true
     }
 }
 
 
+class Student extends Human {
+    constructor(name, age, roll) {
+        super();
+        this.name = name;
+        this.age = age;
+        this.roll = roll;
+    }
+}
 
-const car1 = new Car('tesla', 'model3')
+const student1 = new Student('sheikh', 20, 100);
 
-console.log(car1.brand);
+console.log(student1);
